@@ -6,7 +6,16 @@ $(function(){  // $(document).ready shorthand
 $(document).ready(function() {
 
     $('.fadein').each(function(i) {
-      $(this).animate({'opacity': '1'}, 2000);
+      var object_threshold = ($(this).position().top + $(this).position().top + $(this).outerHeight()) / 2;
+      var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+      /* If the object is completely visible in the window, fade it it */
+      if( bottom_of_window > object_threshold){
+
+          $(this).animate({'opacity':'1'}, 1500);
+          //$(this).animate(, 1500);
+
+      }
     });
 
   /* Every time the window is scrolled ... */
@@ -21,7 +30,8 @@ $(document).ready(function() {
           /* If the object is completely visible in the window, fade it it */
           if( bottom_of_window > object_threshold){
 
-              $(this).animate({'opacity':'1'},1500);
+              $(this).animate({'opacity':'1', 'right': '50px'},1500);
+              //$(this).animate(, 1500);
 
           }
 

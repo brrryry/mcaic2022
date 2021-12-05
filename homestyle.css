@@ -1,3 +1,7 @@
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #101010;
   margin-top: 0px;
@@ -9,15 +13,75 @@ p {
 }
 
 .section {
-  min-height: 500px
+  min-height: 50px
 }
+/*top buttons*/
+#topbuttons img {
+  margin-top: 0px;
+  width: 75px;
+  height: 75px;
+}
+
+#topbuttons {
+  margin-top: 0px;
+  font-size: 25px;
+}
+
+#topbuttons a {
+  margin-right: 5%;
+  top: 0px;
+}
+
+#topbuttons:hover {
+  transition-duration: 0.5s;
+  opacity: 1;
+}
+
+#topbuttons:not(hover) {
+  transition-duration: 0.5s;
+  opacity:0.05;
+}
+
+#topnav {
+  margin-top: 15px;
+}
+
+/* The navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #4287f5;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 99%; /* Full width */
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+/* Main content */
+.main {
+  margin-top: 30px; /* Add a top margin to avoid content overlay */
+}
+
+
 /*divone*/
 #divone {
     height: 925px;
     width: auto;
     text-align: center;
-    align-items: center;
-    justify-content: center;
     color: #00d9e8;
 }
 
@@ -32,13 +96,11 @@ p {
     /* Specify the background image to be used */
     background-image: url('https://i.gifer.com/W9dC.gif');
     background-size: cover;
-
-    /* Specify the background image */
     opacity: 0.2;
 }
 
 #divone h1 {
-  padding-top: 15%;
+  padding-top: 10%;
   font-size: 100px;
   margin-top: 0px;
 }
@@ -48,19 +110,21 @@ p {
 .left_half {
   position: absolute;
   left: 0px;
+  margin-left: 0px;
   width: 50%;
 }
 
 .right_half {
   position: absolute;
   right: 0px;
+  margin-right: 0px;
   width: 50%;
 }
 
 
 
 #divtwo {
-  height: 350px;
+  height: 500px;
   color: #101010;
   background-color: #00d9e8;
 }
@@ -74,33 +138,63 @@ p {
 #divtwotext p {
   position: absolute;
   line-height: 200%;
+  font-size: 20px;
+  margin-right: 5%;
 }
 
 #buttons1 .button {
   position: relative;
   background-color: #101010; /* Green */
-  border: 5px solid black;
+  border: 5px solid #66aefa;
   color: #00d9e8;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  padding: 30px 60px;
-  font-size: 16px;
+  padding: 1% 2%;
+  font-size: 40px;
   cursor: pointer;
 }
 
 #divtwo .button:hover {
   transition-duration: 0.5s;
   background-color: #00d9e8;
-  color: #ffffff;
+  color: #101010;
 }
 
 #button1 {
-  margin: 0px 300px;
+  margin: 0% 25%;
 }
 
 #button2 {
-  margin: 100px 300px;
+  margin: 10% 37.5%;
+}
+
+/*divthree*/
+#divthree {
+  color: #00d9e8;
+  height: 500px;
+}
+
+#divthree h1 {
+  font-size: 50px;
+  text-align: center;
+  padding-top: 1%;
+}
+
+#logo1 img {
+  margin-left: 25%;
+  margin-top: -5%;
+  width: 300px;
+  height: 300px;
+}
+
+#logisticstext p {
+  margin-top: 10px;
+  line-height: 150%;
+}
+
+#divthree p {
+  padding-left: 3%
 }
 
 #container {
