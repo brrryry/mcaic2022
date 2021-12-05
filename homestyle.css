@@ -1,0 +1,116 @@
+body {
+  background-color: #101010;
+  margin-top: 0px;
+}
+
+p {
+  margin-top: 0px;
+  font-size: 24px;
+}
+
+.section {
+  min-height: 500px
+}
+/*divone*/
+#divone {
+    height: 925px;
+    width: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #00d9e8;
+}
+
+#divone::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+
+    /* Specify the background image to be used */
+    background-image: url('https://i.gifer.com/W9dC.gif');
+    background-size: cover;
+
+    /* Specify the background image */
+    opacity: 0.2;
+}
+
+#divone h1 {
+  padding-top: 15%;
+  font-size: 100px;
+  margin-top: 0px;
+}
+
+/*divtwo*/
+
+.left_half {
+  position: absolute;
+  left: 0px;
+  width: 50%;
+}
+
+.right_half {
+  position: absolute;
+  right: 0px;
+  width: 50%;
+}
+
+
+
+#divtwo {
+  height: 350px;
+  color: #101010;
+  background-color: #00d9e8;
+}
+
+#divtwo h1 {
+  text-align: center;
+  font-size: 50px;
+  padding-top: 25px;
+}
+
+#divtwotext p {
+  position: absolute;
+  line-height: 200%;
+}
+
+#buttons1 .button {
+  position: relative;
+  background-color: #101010; /* Green */
+  border: 5px solid black;
+  color: #00d9e8;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  padding: 30px 60px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#divtwo .button:hover {
+  transition-duration: 0.5s;
+  background-color: #00d9e8;
+  color: #ffffff;
+}
+
+#button1 {
+  margin: 0px 300px;
+}
+
+#button2 {
+  margin: 100px 300px;
+}
+
+#container {
+    height:2000px;
+}
+
+.hideme {
+    opacity:0;
+}
+
+.fadein{
+  opacity: 0;
+}
