@@ -220,8 +220,10 @@ p {
 }
 
 #divbottom {
+  margin-top: 0px;
   height: 350px;
   color: #00d9e8;
+  background-color:#303030;
   text-align: center;
 }
 
