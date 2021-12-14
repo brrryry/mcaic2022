@@ -131,11 +131,14 @@ p {
   padding-top: 25px;
 }
 
-#divtwotext p {
-  position: absolute;
+#divtwo p {
+  position: relative;
+  text-align: center;
   line-height: 200%;
   font-size: 20px;
   margin-right: 5%;
+  margin-left: 5%;
+  margin-top: 1px;
 }
 
 #buttons1 .button {
@@ -158,10 +161,6 @@ p {
 }
 
 #button1 {
-  margin: 0% 25%;
-}
-
-#button2 {
   margin: 10% 37.5%;
 }
 
@@ -229,6 +228,11 @@ p {
 
 #divbottom h1 {
   font-size: 40px;
+}
+
+#divbottom img {
+  width: 50px;
+  height: 50px;
 }
 
 #container {

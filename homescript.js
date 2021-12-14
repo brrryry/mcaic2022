@@ -3,6 +3,7 @@ $(function(){  // $(document).ready shorthand
   $('.monster').fadeIn('slow');
 });
 
+
 $(document).ready(function() {
 
   $('.fadein').each(function(i) {
