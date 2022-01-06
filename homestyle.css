@@ -13,7 +13,23 @@ p {
 }
 
 .section {
-  min-height: 300px
+  min-height: 300px;
+}
+.reg-button {
+  margin: auto;
+  width: 250px;
+  background-color: #00d9e8;
+  border-radius: 4px;
+  padding: 14px 16px;
+  text-align: center;
+  z-index: 10;
+}
+
+
+.reg-button  a{
+  color: #101010;
+  font-size: 24px;
+  text-decoration: none;
 }
 /*top buttons*/
 #topbuttons img {
@@ -163,10 +179,32 @@ p {
 #button1 {
   margin: 10% 37.5%;
 }
+#register {
+
+  color: #00d9e8;
+}
+
+
+#register h1 {
+  text-align: center;
+  font-size: 50px;
+  padding-top: 25px;
+}
+
+#register p {
+  position: relative;
+  text-align: center;
+  line-height: 200%;
+  font-size: 20px;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-top: 1px;
+}
 
 /*divthree*/
 #divthree {
-  color: #00d9e8;
+  background-color: #00d9e8;
+  color: #101010;
   height: 500px;
 }
 
