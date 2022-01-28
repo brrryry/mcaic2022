@@ -1,287 +1,298 @@
-html{
-  scroll-behavior: smooth;
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+html {
+    scroll-behavior: smooth;
+    font-family: "Jost", sans-serif;
 }
 
 body {
-  background-color: #101010;
-  margin-top: 0px;
+    background-color: #101010;
+    margin-top: 0px;
 }
 
 p {
-  margin-top: 0px;
-  font-size: 24px;
+    margin-top: 0px;
+    font-size: 24px;
 }
 
 .section {
-  min-height: 300px;
 }
+
 .reg-button {
-  margin: auto;
-  width: 250px;
-  background-color: #00d9e8;
-  border-radius: 4px;
-  padding: 14px 16px;
-  text-align: center;
-  z-index: 10;
+    margin: auto;
+    width: 250px;
+    background-color: #00d9e8;
+    border-radius: 4px;
+    padding: 14px 16px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 
-.reg-button  a{
-  color: #101010;
-  font-size: 24px;
-  text-decoration: none;
-  z-index: 11;
+.reg-button a {
+    color: #101010;
+    font-size: 24px;
+    text-decoration: none;
+    z-index: 11;
 }
+
 /*top buttons*/
 #topbuttons img {
-  margin-top: 0px;
-  width: 75px;
-  height: 75px;
+    margin-top: 0px;
+    width: 75px;
+    height: 75px;
 }
 
 #topbuttons {
-  margin-top: 0px;
-  font-size: 25px;
+    margin-top: 0px;
+    font-size: 25px;
 }
 
 #topbuttons a {
-  margin-right: 5%;
-  top: 0px;
+    margin-right: 5%;
+    top: 0px;
 }
 
 #topbuttons:hover {
-  transition-duration: 0.5s;
-  opacity: 1;
+    transition-duration: 0.5s;
+    opacity: 1;
 }
 
 #topbuttons:not(hover) {
-  transition-duration: 0.5s;
-  opacity:0.05;
+    transition-duration: 0.5s;
+    opacity: 0.05;
 }
 
 #topnav {
-  margin-top: 15px;
+    margin-top: 15px;
 }
 
 /* The navigation bar */
 .navbar {
-  overflow: hidden;
-  background-color: #4287f5;
-  position: fixed;
-  top: 0;
-  width: 99%; /* 1% right margin*/
+    overflow: hidden;
+    background-color: #4287f5;
+    position: fixed;
+    top: 0;
+    width: 99%; /* 1% right margin*/
 }
 
 /*The secret code is "Bryan is 0010 cool."*/
 
 
 .navbar a {
-  float: right;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
 .navbar a:hover {
-  background: #ddd;
-  color: black;
+    background: #ddd;
+    color: black;
 }
 
 
-
 /*divone*/
-#divone {
-    height: 925px;
+#title-screen {
+    height: 100vh;
     width: auto;
     text-align: center;
     color: #00d9e8;
 }
 
-#divone::before {
+#title-screen::before {
     content: "";
     position: absolute;
     top: 0px;
     right: 0px;
     bottom: 0px;
     left: 0px;
+    z-index: -1;
+
 
     background-image: url('https://i.gifer.com/W9dC.gif');
     background-size: cover;
+    background-position: center;
     opacity: 0.2;
 }
 
-#divone h1 {
-  padding-top: 15%;
-  font-size: 100px;
-  margin-top: 0px;
+#title-screen h1 {
+    padding-top: 15%;
+    font-size: 100px;
+    margin-top: 0px;
 }
 
-/*divtwo*/
 
 .left_half {
-  position: absolute;
-  left: 0px;
-  margin-left: 0px;
-  width: 50%;
+    position: absolute;
+    left: 0px;
+    margin-left: 0px;
+    width: 50%;
 }
 
 .right_half {
-  position: absolute;
-  right: 0px;
-  margin-right: 0px;
-  width: 50%;
+    position: absolute;
+    right: 0px;
+    margin-right: 0px;
+    width: 50%;
+}
+
+#info-boxes {
+
+    text-align: center;
+    font-size: 50px;
+    padding: 0 0 ;
+}
+.section {
+    padding: 10px;
+    min-height: 300px;
+}
+.section:nth-child(odd):not(#title-screen){
+    color: #101010;
+    background-color: #00d9e8;
+}
+
+.section:nth-child(even) {
+    color: #00d9e8;
+    background-color: #101010;
+}
+
+#info-boxes h1 {
+
+    font-size: 50px;
+}
+.two-column{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 
-
-#divtwo {
-  height: 500px;
-  color: #101010;
-  background-color: #00d9e8;
-}
-
-#divtwo h1 {
-  text-align: center;
-  font-size: 50px;
-  padding-top: 25px;
-}
 
 #divtwo p {
-  position: relative;
-  text-align: center;
-  line-height: 200%;
-  font-size: 20px;
-  margin-right: 5%;
-  margin-left: 5%;
-  margin-top: 1px;
+    position: relative;
+    text-align: center;
+    line-height: 200%;
+    font-size: 20px;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 1px;
 }
 
 #buttons1 .button {
-  position: relative;
-  background-color: #101010; /* not Green Lol */
-  border: 5px solid #66aefa;
-  color: #00d9e8;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  padding: 1% 2%;
-  font-size: 40px;
-  cursor: pointer;
+    position: relative;
+    background-color: #101010; /* not Green Lol */
+    border: 5px solid #66aefa;
+    color: #00d9e8;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1% 2%;
+    font-size: 40px;
+    cursor: pointer;
 }
 
 #divtwo .button:hover {
-  transition-duration: 0.5s;
-  background-color: #00d9e8;
-  color: #101010;
+    transition-duration: 0.5s;
+    background-color: #00d9e8;
+    color: #101010;
 }
 
 #button1 {
-  margin: 10% 37.5%;
+    margin: 10% 37.5%;
 }
+
 #register {
 
-  color: #00d9e8;
+    color: #00d9e8;
 }
 
 
 #register h1 {
-  text-align: center;
-  font-size: 50px;
-  padding-top: 25px;
+    text-align: center;
+    font-size: 50px;
+    padding-top: 25px;
+}
+.list {
+    text-align: left;
 }
 
 #register p {
-  position: relative;
-  text-align: center;
-  line-height: 200%;
-  font-size: 20px;
-  margin-right: 5%;
-  margin-left: 5%;
-  margin-top: 1px;
+    position: relative;
+    text-align: center;
+    line-height: 200%;
+    font-size: 20px;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 1px;
 }
 
-/*divthree*/
-#divthree {
-  background-color: #00d9e8;
-  color: #101010;
-  height: 500px;
+
+#logo1 {
+    width: 30vw;
+    height: 30vw;
 }
 
-#divthree h1 {
-  font-size: 50px;
-  text-align: center;
-  padding-top: 1%;
+.center-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#logo1 img {
-  margin-left: 25%;
-  margin-top: -5%;
-  width: 300px;
-  height: 300px;
-}
 
-#logisticstext p {
-  margin-top: 10px;
-  line-height: 150%;
-}
-
-#divthree p {
-  padding-left: 3%
-}
 
 /*divfour*/
 #divfour {
-  color: #101010;
-  background-color: #00d9e8;
-  height: 500px;
-  align-items: center;
+    color: #101010;
+    background-color: #00d9e8;
+    height: 500px;
+    align-items: center;
 }
 
 #divfour h1 {
-  text-align: center;
-  font-size: 50px;
-  padding-top: 1%;
+    text-align: center;
+    font-size: 50px;
+    padding-top: 1%;
 }
 
 
 
-#divfour h2 {
-  text-align: center;
-  font-size: 25px;
+.topic-list h2 {
+    text-align: center;
+    font-size: 25px;
 }
 
-#divfour p {
-  text-align: center;
 
-}
 
 #divbottom {
-  margin-top: 0px;
-  height: 350px;
-  color: #00d9e8;
-  background-color:#303030;
-  text-align: center;
+    margin-top: 0px;
+    height: 350px;
+    text-align: center;
 }
 
 #divbottom h1 {
-  font-size: 40px;
+    font-size: 40px;
 }
 
 #divbottom img {
-  width: 50px;
-  height: 50px;
+    width: 50px;
+    height: 50px;
 }
 
 #container {
-    height:2000px;
+    height: 2000px;
 }
 
 .hideme {
-    opacity:0;
+    opacity: 0;
 }
 
-.fadein{
-  opacity: 0;
+.fadein {
+    opacity: 0;
 }
